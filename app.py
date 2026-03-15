@@ -1,7 +1,4 @@
-# app.py
-# Heart Disease Prediction Dashboard (Enhanced UI v2)
-# Author: [Your Name]
-# Description: A polished, user-friendly dashboard with improved styling and layout.
+
 
 import streamlit as st
 import pandas as pd
@@ -12,9 +9,6 @@ import plotly.express as px
 from PIL import Image
 import os
 
-# ---------------------------
-# Page configuration
-# ---------------------------
 st.set_page_config(
     page_title="Heart Disease Predictor",
     page_icon="❤️",
@@ -22,9 +16,6 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# ---------------------------
-# Custom CSS for enhanced design
-# ---------------------------
 st.markdown("""
 <style>
     /* Import Google Fonts */
@@ -180,9 +171,6 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# ---------------------------
-# Load artifacts (cached)
-# ---------------------------
 @st.cache_resource
 def load_models():
     scaler = joblib.load('scaler.pkl')

@@ -1,8 +1,4 @@
-# model.py
-# Heart Disease Prediction - Model Training Pipeline
-# Author: [Your Name]
-# Description: Trains Random Forest, Logistic Regression, and XGBoost models,
-#              evaluates performance, generates SHAP explanations, and saves artifacts.
+
 
 import pandas as pd
 import numpy as np
